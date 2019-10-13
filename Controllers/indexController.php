@@ -3,12 +3,12 @@ namespace Controllers;
 use Classes\Controller;
 use Models\UserModel;
 
-Class indexController Extends Controller {
+class IndexController extends Controller
+{
+    public $layouts = "first_layouts";
 
-	public $layouts = "first_layouts";
-
-	function index() {
-		$this->template->view('index');
-	}
-	
+    public function index()
+    {
+        $this->template->view('index');
+    }
 }
